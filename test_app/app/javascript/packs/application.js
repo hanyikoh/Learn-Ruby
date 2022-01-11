@@ -8,6 +8,8 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+console.log("1111111111111111222222222222222222222222222222222222222222222222");
+alert("WEW");
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
