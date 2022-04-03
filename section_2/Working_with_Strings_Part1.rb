@@ -1,3 +1,4 @@
+# WORKING WITH STRINGS Part 1
 # String concatenation
 first_name = "hanyi"
 last_name = "koh"
@@ -54,3 +55,22 @@ p "the new first name is \#{new_first_name}" # it will not print out the new_fir
 # => "the new first name is \#{new_first_name}"
 p 'Mashrur asked \'Hey John, how are you doing?\''
 # => "Mashrur asked 'Hey John, how are you doing?'"
+
+# WORKING WITH STRINGS Part 2: GETTiNG INPUT FROM USER
+puts "What is your first name?"
+first_name = gets.chomp
+# <= hanyi
+puts "What is your last name?"
+last_name = gets.chomp 
+# <= koh
+puts "HELLO #{first_name} #{last_name} Nice to meet you!"
+# => HELLO hanyi koh Nice to meet you!
+
+# INPUTS Data Type
+puts "Enter a number to multiply by 2"
+input = gets.chomp
+# <= 2
+puts input * 2 # This is equal to string concatenation ( puts "2" + "2")
+# <= 22
+puts input.to_i * 2 # Convert input to integer and multiply it with 2
+# <= 4
