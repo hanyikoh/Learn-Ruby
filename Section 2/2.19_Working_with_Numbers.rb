@@ -27,15 +27,26 @@ puts "I as a diff line after a divider"
 
 x = "5".to_i
 # => 5
-x.to_f
+puts x.to_f
 # => 5.0
 y = "10".to_f
-x * y
+puts x * y
 # => 50.0
-"hello".to_i
+puts "hello".to_i
 # => 0
-"hello".to_f
+puts "hello".to_f
 # => 0.0
 x = "hello"
-x.to_i
+puts x.to_i
 # => 0
+
+puts "Simple Calculator"
+25.times{print"-"}
+puts
+puts "Enter the first number"
+num_1 = gets.chomp
+puts "Enter the second number" 
+num_2 = gets.chomp
+puts "The first number multiplied by the second number is #{num_1.to_i * num_2.to_i}"
+puts "The modulus between first number and the second number is #{num_1.to_i % num_2.to_i}"
+
