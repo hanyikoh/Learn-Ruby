@@ -14,7 +14,7 @@ puts full_name.class
 p 10.methods # find all the invokable methods for the object by default
 # => [:bit_length, :digits, :|, :gcd, :lcm, ...]
 p 10.class
-# => String
+# => Integer
 ## When using two methods on one object in the same line, is called method chain for example: 10.to_s.class
 p 10.to_s.class
 # => String
