@@ -38,3 +38,40 @@ end
 puts "La la la"
 # => "This evaluated to true"
 # => La la la
+
+
+condition = true
+another_condition = false
+if condition || another_condition # True OR False will evaluated to true
+    puts "This evaluated to true"
+else  
+    puts "This evaluated to false"
+end 
+# => "This evaluated to true"
+
+condition = false
+another_condition = false
+if condition || another_condition # True OR False will evaluated to true
+    puts "This evaluated to true"
+else  
+    puts "This evaluated to false"
+end 
+# => "This evaluated to false"
+
+condition = false
+another_condition = false
+if !condition || !another_condition # Not False OR Not False = True OR True
+    puts "This evaluated to true"
+else  
+    puts "This evaluated to false"
+end 
+# => "This evaluated to true"
+
+condition = false
+another_condition = false
+if !condition || another_condition # Not False OR False = True OR False
+    puts "This evaluated to true"
+else  
+    puts "This evaluated to false"
+end 
+# => "This evaluated to true"
