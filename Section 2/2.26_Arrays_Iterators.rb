@@ -114,3 +114,31 @@ p %w(my name is hanyi and this is great Ruby is amazing)
 # => ["my", "name", "is", "hanyi", "and", "this", "is", "great", "Ruby", "is", "amazing"]
 # z = _ # In irb mode, this _ will get the last output
 # z
+
+
+puts
+
+# iterator to iterate through array.
+20.times{print"-"} 
+puts 
+z=%w"my name is hanyi and this is great Ruby is amazing"
+for i in z
+    print i
+end
+puts
+for i in z
+    print i + " " # Print out each element followed by a space
+end
+puts
+z.each do | food | # Using each function to iterate the array
+    print food + " "
+end
+puts
+z.each{|food| print food + " "} # Another way of creating the each block
+puts 
+z.each{|food| print food.capitalize + " "} # Applied the capitalize function to capitalize every first letter of string element
+puts
+z = (1..100).to_a.shuffle
+p z.select{|number| number.odd?} # Iterate through the entire array and only select the element the match with the condition
+
+# a.methods to check all invokable methods for array
