@@ -81,3 +81,36 @@ p a.include?("hanyi")
 # true
 p a.include?("hanyikoh")
 # false
+
+
+puts
+
+# Push and pop the array ( the value that is getting pushed or poped will be returned. )
+p a.push("new item")
+# ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "new item"]
+b = a.pop # return the last item and remove it from original array
+p a
+# ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+p b
+# "new item"
+
+puts
+
+# Join and Split method on array ( Join is used for combine the elements, Split is used for splitting something into elements, put into array )
+p a
+# ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+p a.join
+# "hanyi12345678910"
+p a.join("-")
+# "hanyi-1-2-3-4-5-6-7-8-9-10"
+p a.join(", ")
+# "hanyi, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+b = a.join("-")
+p b.split
+# ["hanyi-1-2-3-4-5-6-7-8-9-10"]
+p b.split("-")
+# ["hanyi", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+p %w(my name is hanyi and this is great Ruby is amazing)
+# => ["my", "name", "is", "hanyi", "and", "this", "is", "great", "Ruby", "is", "amazing"]
+# z = _ # In irb mode, this _ will get the last output
+# z
