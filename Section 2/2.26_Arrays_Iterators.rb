@@ -45,3 +45,25 @@ p x.to_a.shuffle
 y = x.to_a.shuffle
 p y.length
 # 26
+
+
+# Add item to an array with unshift, append, << and get element with uniq, last and first function
+p a
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+a << 10
+p a
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+p a.last 
+10
+p a.first
+1
+p a.unshift("hanyi") # Add as first element
+# => ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+p a.append("hanyi") # Add as last element
+# => ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "hanyi"]
+p a.uniq # Return the unique element only
+# => ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+p a.uniq! # a = a.uniq
+# => ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+p a
+# => ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
