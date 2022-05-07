@@ -67,3 +67,17 @@ p a.uniq! # a = a.uniq
 # => ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 p a
 # => ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+puts
+
+# Check if array is empty and include certain element
+p a.empty?
+# false
+b=[]
+p b.empty?
+# true
+p a.include?("hanyi")
+# true
+p a.include?("hanyikoh")
+# false
