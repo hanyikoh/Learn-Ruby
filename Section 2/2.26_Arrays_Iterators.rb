@@ -36,27 +36,27 @@ puts x # The original variable value / array is not mutated because the previous
 z = x.to_a.shuffle!# Keep the elements in shuffled order
 x = (1..10).to_a
 p x.reverse! # Add bank to add permanent change
-# [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+# => [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 x = "a".."z"
 p x.to_a
-# ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+# => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 p x.to_a.shuffle
-# ["k", "w", "a", "y", "z", "e", "h", "n", "o", "x", "c", "r", "u", "t", "v", "p", "d", "f", "s", "g", "b", "j", "i", "q", "l", "m"]
+# => ["k", "w", "a", "y", "z", "e", "h", "n", "o", "x", "c", "r", "u", "t", "v", "p", "d", "f", "s", "g", "b", "j", "i", "q", "l", "m"]
 y = x.to_a.shuffle
 p y.length
-# 26
+# => 26
 
 
 # Add item to an array with unshift, append, << and get element with uniq, last and first function
 p a
-[1, 2, 3, 4, 5, 6, 7, 8, 9]
+# => [1, 2, 3, 4, 5, 6, 7, 8, 9]
 a << 10
 p a
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 p a.last 
-10
+# => 10
 p a.first
-1
+# => 1
 p a.unshift("hanyi") # Add as first element
 # => ["hanyi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 p a.append("hanyi") # Add as last element
