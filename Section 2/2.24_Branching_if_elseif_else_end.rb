@@ -60,7 +60,7 @@ end
 
 condition = false
 another_condition = false
-if !condition || !another_condition # Not False OR Not False = True OR True
+if !condition || !another_condition # Not False OR Not False = True OR True = True
     puts "This evaluated to true"
 else  
     puts "This evaluated to false"
@@ -69,7 +69,7 @@ end
 
 condition = false
 another_condition = false
-if !condition || another_condition # Not False OR False = True OR False
+if !condition || another_condition # Not False OR False = True OR False = True
     puts "This evaluated to true"
 else  
     puts "This evaluated to false"
@@ -87,6 +87,7 @@ elsif name == "Evgeny"
 else
     puts "Welcome to the program, user"
 end
+# => Welcome to the program, Mashrur
 
 puts "Simple Calculator"
 20.times{print "-"}
