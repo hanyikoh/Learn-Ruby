@@ -1,20 +1,20 @@
-def multiply(first_num, second_num)
+def multiply(first_num, second_num) # A function that takes in two number and return the multiplication result ( float ) between those numbers
     first_num.to_f * second_num.to_f
 end
 
-def subtract(first_num, second_num)
+def subtract(first_num, second_num) # A function that takes in two number and return the subtraction result ( float )  between those numbers
     first_num.to_f - second_num.to_f
 end
 
-def divide(first_num, second_num)
+def divide(first_num, second_num) # A function that takes in two number and return the division result ( float )  between those numbers
     first_num.to_f / second_num.to_f
 end
 
-def add(first_num, second_num)
+def add(first_num, second_num) # A function that takes in two number and return the addition result ( float )  between those numbers
     first_num.to_f + second_num.to_f
 end 
 
-def mod(first_num, second_num)
+def mod(first_num, second_num) # A function that takes in two number and return the modulus value ( float )  between those numbers
     first_num.to_f % second_num.to_f
 end 
 
