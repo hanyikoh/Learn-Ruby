@@ -7,6 +7,7 @@ def my_name_is
 end
   
 class SomeClass # The class name is capitalize
+end
   
 # More guide can be found at:
 # https://github.com/rubocop/ruby-style-guide
