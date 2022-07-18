@@ -8,7 +8,7 @@ users = [
 
 def auth_user(username, password, list_of_users)
     list_of_users.each do |user_record|
-        if user_record[:username] == username && user_record[:password] == password
+        if user_record[:username] == username && user_record[:password] == password ## Check if the enter credentials match
             return user_record ## Return from a function will exit the function, so the for loop will stop
         else
             return "Credentials were not correct"
@@ -31,10 +31,15 @@ while attempts < 4
     puts authentication
     puts "Press n to quit or any other key to continue: "
     input = gets.chomp.downcase
-    break if input == "n"
+    break if input == "n" # Break the loop if user enter n
     # if input == 4
     #     break
     # end
     attempts += 1
 end
 puts "You have exceeded the number of attempts" if attempts == 4
+
+# This program will take input from the user and compare password
+# Username: #<= hanyikoh
+# Password: #<= password1
+# => {:username=>"hanyikoh", :password=>"password1"}
