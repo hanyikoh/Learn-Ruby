@@ -36,3 +36,22 @@ dial_book = {
       puts "You entered a city name not in the dictionary"
     end
   end
+
+  
+# => Do you want to lookup an area code based on a city name?(Y/N)
+# <= y
+# => Which city do you want the area code for?
+# => newyork
+# => newbrunswick
+# => edison
+# => plainsboro
+# => sanfrancisco
+# => miami
+# => paloalto
+# => evanston
+# => orlando
+# => lancaster
+
+# => Enter your selection
+# <= orlando
+# => The area code for orlando is 407
