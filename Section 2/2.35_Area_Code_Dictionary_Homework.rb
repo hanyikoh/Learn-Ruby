@@ -25,7 +25,8 @@ end
 loop do
 	puts "Do you want to lookup an area code based on a city name?(Y/N)"
 	answer = gets.chomp.downcase # Downcasing the input so that it accepts both Y and y
-	break if answer != "y"
+	
+  break if answer != "y"
 	
   puts "Which city do you want the area code for?"
 	puts get_city_names(dial_book)
