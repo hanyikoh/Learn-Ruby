@@ -1,4 +1,4 @@
-require_relative 'crud'
+require_relative '2.51_Mixins_4_Include_CRUD'
  
 class Student
   include Crud
