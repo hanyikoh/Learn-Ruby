@@ -16,7 +16,7 @@ module Crud
     BCrypt::Password.create(password)
   end
  
-  def Crud.verify_hash_digest(password)
+  def Crud.get_hash_digest(password)
     BCrypt::Password.new(password)
   end
  
